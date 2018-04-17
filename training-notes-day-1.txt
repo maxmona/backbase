@@ -6,9 +6,11 @@ Maven setup
 
 check & verify-- both JAVA & MAVEN should be up and running...
 
-
+CXP ()
 
 setup settings.xml for backbase repos
+
+install node (node-v9.3.0-x64)
 
 https://www.npmjs.com/package/bb-cli
 (install CLIs from above URL)
@@ -20,3 +22,22 @@ https://www.npmjs.com/package/bb-cli
 3. npm install --global @bb-cli/bb-package @bb-cli/bb-import @bb-cli/bb-generate
 
 4. npm install --global @backbase/generator-project-statics @backbase/generator-model-ng @backbase/generator-widget@2.4.3 @backbase/generator-ui-ng @backbase/generator-ext-ng@2.1.0
+
+5. create project using below command (inside your project folder only)
+
+mvn archetype:generate -DarchetypeArtifactId=launchpad-archetype-CXP5.7 -DarchetypeGroupId=com.backbase.launchpad -DarchetypeVersion=2.4.0
+
+maven will ask some prompt info
+
+groupId – com.backbase.training
+artifactId – backbase-training
+version - accept default
+
+after build sucess
+
+run 
+a. mvn clean install -Pclean-database
+b. run.bat - It will open 4 windows (Portal server, solr, orchestrator,content service). wait till all jetty servers get started (on all 4 windows)
+c. got to projet root directory and delete "static" folder.
+d. run below command to create static folder (as required.)
+	bb-generate project-statics (might BB command will not run- you need to setup path - "C:\Users\ishaheed\AppData\Roaming\npm" )
