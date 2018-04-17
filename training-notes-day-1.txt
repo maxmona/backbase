@@ -1,0 +1,22 @@
+login- my.backbase.com -- sign up and login
+
+java setup
+
+Maven setup
+
+check & verify-- both JAVA & MAVEN should be up and running...
+
+
+
+setup settings.xml for backbase repos
+
+https://www.npmjs.com/package/bb-cli
+(install CLIs from above URL)
+
+1. npm install --global bb-cli
+
+2. npm install @backbase/generator-widget @backbase/generator-widget-lp @backbase/generator-container @backbase/generator-container-template -g
+
+3. npm install --global @bb-cli/bb-package @bb-cli/bb-import @bb-cli/bb-generate
+
+4. npm install --global @backbase/generator-project-statics @backbase/generator-model-ng @backbase/generator-widget@2.4.3 @backbase/generator-ui-ng @backbase/generator-ext-ng@2.1.0
