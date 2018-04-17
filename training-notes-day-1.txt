@@ -41,3 +41,17 @@ b. run.bat - It will open 4 windows (Portal server, solr, orchestrator,content s
 c. got to projet root directory and delete "static" folder.
 d. run below command to create static folder (as required.)
 	bb-generate project-statics (might BB command will not run- you need to setup path - "C:\Users\ishaheed\AppData\Roaming\npm" )
+
+You need enter below values,
+Folder name – a name of the folder being generated; accept the default value (statics).
+Project Group Id – a unique project group identifier, e.g. com.backbase.training.
+Collection Name – accept the default value (collection-training).
+Project Version – accept the default value.
+Node Version – enter the version of Node installed on your system (for example, v7.5.0).
+NPM Version – accept the default value.
+CXP line – select Backbase 5.X by using the up and down arrow keys on your keyboard and press Enter.
+Collection depends on 
+v9.3.0
+
+
+follow the  link of my backbase..
