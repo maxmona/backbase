@@ -1,0 +1,2 @@
+
+How to create a portal (CXP manager should be up and running....)
