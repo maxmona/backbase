@@ -1,0 +1,59 @@
+Portal tools
+
+bb cli- 0.3.8
+
+npm install -g bb-cli@0.3.8
+
+https://github.com/backbase/bb-cli
+
+create new widget,
+
+ALways in static folder
+inside coolection-training/src (all the custome widget mustbe created here)
+create folder with widget name
+open cmd
+BB generate widget ng (it will create angular base widget -2x)
+it will ask for you name (follow pattern- <type><domainname(not required now)><modulename><submodule> -ng)
+
+type- container/page/widget
+eg. widget-helloworld-helloworld -ng
+
+Inside widget,
+widget core- controller
+widget ext-()extenion- view part
+widget model (data models)
+
+Importing on CXP-
+go to cmd of static folder
+1. run- bb-package project to create package
+2. bb-import package.zip it will import package to data base of CXP  manager
+3. got to CXP manager
+4. got to Enterprise catlog and see you widget should be here.
+5. activate it in portal catlog.
+6. use it (create a new page and add it into your page)
+
+
+java -jar importar-5.6.x.x-jar-with-dependencies.jar import-portal-model -f hsbc-training.xml -s http://localhost:7777/portalserver -u admin -p admin (not working)
+
+Portal APIs,
+
+rest call all over,
+
+documentation for REST call
+--
+https://my.backbase.com/docs/product-documentation/documentation//portal/latest/rest_portalservices_urlmod.html
+
+http://localhost:7777/portalserver/portals?f=property.DefaultLandingPage(eq)index
+http://localhost:7777/portalserver/portals/retail-banking-demo/pages?f=property.title(eq)staging
+
+http://localhost:7777/portalserver/portals/retail-banking-demo/widgets
+http://localhost:7777/portalserver/portals/retail-banking-demo/widgets?of=10&ps=10
+
+http://localhost:7777/portalserver/portals/retail-banking-demo/pages?f=property.title(eq)Payments&pc=true&depth=3
+
+http://localhost:7777/portalserver/portals/retail-banking-demo/pages?of=5&ps=5 (five pages)
+http://localhost:7777/portalserver/portals/retail-banking-demo/pages?of=5&ps=5&s=name(asc)
+https://docs.backbase.com/portal/5.6.2/jsdocapi/index.html
+
+
+MOM - Message-oriented middleware
