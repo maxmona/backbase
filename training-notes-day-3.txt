@@ -57,3 +57,13 @@ https://docs.backbase.com/portal/5.6.2/jsdocapi/index.html
 
 
 MOM - Message-oriented middleware
+
+bitbucket
+user: training@backbase.com
+password: b4ckb4s3-tr41n1ng
+
+
+mvn archetype:generate -DarchetypeVersion=5.6.4.0 -DarchetypeArtifactId=integration-service-spring-archetype -DarchetypeGroupId=com.backbase.portal.archetypes 
+camel ---
+
+ <from uri="restlet:/hello?restletMethod=GET&amp;restletBinding=#queryStringToHeadersRestletBinding"/>
