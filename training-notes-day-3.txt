@@ -32,12 +32,23 @@ go to cmd of static folder
 5. activate it in portal catlog.
 6. use it (create a new page and add it into your page)
 
+add iwdget to cxp
+
+1. got to src of your widget 
+2. type/run command bb import-item.
+3. goto cxp manager and look for your widget into enterprise catalog.
+
+
 
 java -jar importar-5.6.x.x-jar-with-dependencies.jar import-portal-model -f hsbc-training.xml -s http://localhost:7777/portalserver -u admin -p admin (not working)
 
 Portal APIs,
 
 rest call all over,
+
+start training server-
+
+mvn jetty:run
 
 documentation for REST call
 --
@@ -64,6 +75,21 @@ password: b4ckb4s3-tr41n1ng
 
 
 mvn archetype:generate -DarchetypeVersion=5.6.4.0 -DarchetypeArtifactId=integration-service-spring-archetype -DarchetypeGroupId=com.backbase.portal.archetypes 
+
+group id- com.backbase.training
+arctifact- <cxp-be-m03-security-e01-ldap-provider>
+versin default
+
+	
+
+
 camel ---
 
  <from uri="restlet:/hello?restletMethod=GET&amp;restletBinding=#queryStringToHeadersRestletBinding"/>
+ 
+ 
+ 
+ Advance security....
+ 
+ http://localhost:7777/portalserver/portals/hsbc-training/rights.xml
+ http://localhost:7777/portalserver/portals/hsbc-training/pages/page_1524029659467/rights.xml
