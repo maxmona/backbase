@@ -93,3 +93,45 @@ camel ---
  
  http://localhost:7777/portalserver/portals/hsbc-training/rights.xml
  http://localhost:7777/portalserver/portals/hsbc-training/pages/page_1524029659467/rights.xml
+ 
+ 
+ content service
+ 
+ apache chemistry
+ 
+ SQL 97
+ 
+ SELECT * FROM cmis:document
+ SELECT * FROM cmis:document where cmis:name Like '%t%' 
+ SELECT * FROM cmis:document where cmis:name Like '%T%'
+  SELECT * FROM cmis:document where cmis:contentStreamLength>=1024
+ 
+ 
+ cxp-be-m02-cs-e01-upload
+ 
+    <properties>
+        <chemistry.version>0.6.0</chemistry.version>
+        <tika.version>1.8</tika.version>
+    </properties>
+
+Validator- 
+ cxp-be-m02-cs-e02-validator
+ 
+ it should be added to content service pom.xml
+ you need to register it
+ 
+ 
+Targetting-
+
+
+Tracking--
+
+for tracking you need to change backbase.properties file
+
+below are the changes (un comment both lines and provide values as par your requirement)
+
+### 1.15. Tracking
+
+optional.tracking.profile=trackingStoreCookie
+foundation.tracking.tags.maxAge=3
+ 
