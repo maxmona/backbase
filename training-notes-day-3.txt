@@ -50,6 +50,11 @@ start training server-
 
 mvn jetty:run
 
+----------------------------------
+LDAP data location----
+D:\Users\ishaheed\Documents\backbase-training\backbase-cxp-be-training-server\src\main\resources
+---------------------------------
+
 documentation for REST call
 --
 https://my.backbase.com/docs/product-documentation/documentation//portal/latest/rest_portalservices_urlmod.html
@@ -80,6 +85,7 @@ group id- com.backbase.training
 arctifact- <cxp-be-m03-security-e01-ldap-provider>
 versin default
 
+cxp-be-m04-targeting-e01-custom-collector
 	
 
 
@@ -134,4 +140,23 @@ below are the changes (un comment both lines and provide values as par your requ
 
 optional.tracking.profile=trackingStoreCookie
 foundation.tracking.tags.maxAge=3
+
+stop all server
+build configuration 
+start all servers
+open cxp manager
+got to explorer
+select you portal
+add property (name -trackingTagType -- value car,lone) -save save(carefull)
+
+create one page - 
+in menu level- give page name
+in tracking - use tags from portal property trackingTagType values. SAve
+now in page create one targeting container
+create one alternative in tageting condition and choose your tag (loan is greater than 5). save and close
+give some content in alternative 1 area and fallback area- now go to preview that page and push refresh button 4 times (1 count will be @ first browse).
+kudos :)
+
+
+http://localhost:7777/portalserver/hsbc-training/age-collector
  
