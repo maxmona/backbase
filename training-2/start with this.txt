@@ -1,0 +1,13 @@
+1 Backbase setup instuction:
+ bitbucket.org
+ user: training@backbase.com
+ pass: b4ckb4s3-tr41n1ng
+
+
+
+ Search for "cxp-wc2-setup-archetype" have the steps to install the backbase project
+
+
+2 Open CMD and run "mvn clean install"
+
+ \LIN51005029\Backbase-training
