@@ -11,3 +11,14 @@
 2 Open CMD and run "mvn clean install"
 
  \LIN51005029\Backbase-training
+
+https://bitbucket.org/backbase/cxp-be-m00-training-collection
+https://bitbucket.org/backbase/cxp-wc2-setup-archetype/src/master/
+https://bitbucket.org/backbase/cxp-be-m00-training-server/src/master/
+https://bitbucket.org/backbase/cxp-be-m01-integration-e01-rest/src/master/
+
+http://localhost:9999/training-server/
+http://localhost:9999/hawtio
+http://localhost:7777/portalserver/cxp-manager
+
+
